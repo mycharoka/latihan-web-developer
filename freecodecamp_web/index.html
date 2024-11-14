@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML FREECODECAMP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">THE FORM</h1>
+  <p id="description"></p>
+  <form action="post" id="survey-form">
+    <label for="name" id="name-label">NAME</label><br>
+    <input type="text" id="name" placeholder="Name"><br>
+
+    <label for="email" id="email-label">EMAIL</label><br>
+    <input type="email" id="email" placeholder="email@mail.com"><br>
+
+    <label for="number" id="number-label">NUMBER</label><br>
+    <input type="number" id="number" min="0" max="99" placeholder="number"><br>
+
+    <label for="dropdown">Title</label><br>
+    <select name="dropdown" id="dropdown">
+      <option value="mr">Mr</option>
+      <option value="mrs">Mrs</option>
+      <option value="ms">Ms</option>
+    </select><br>
+
+    <label>
+      <input type="radio" name="position" value="internal">
+      Internal
+    </label><br>
+    <label>
+      <input type="radio" name="position" value="external">
+      External
+    </label><br>
+    <label>
+      <input type="radio" name="position" value="outsource">
+      Outsource
+    </label><br><br>
+    <label>
+      Comment<br>
+      <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+    </label><br>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>

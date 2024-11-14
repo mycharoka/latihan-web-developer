@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"
+                    required
+                />
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        required
+                    />
+                    <button
+                        type="button"
+                        id="show-password"
+                        class="show-password-btn"
+                    >
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="remember-me">
+                    <input
+                        type="checkbox"
+                        id="remember-me"
+                        name="remember-me"
+                    />
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <button type="submit">Login</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+        <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"></script>
+    </body>
+</html>

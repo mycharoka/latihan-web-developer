@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Event Training</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- <div class="contents" align="center" hidden>
+            <button id="incrementButton">Tekan Aku :)</button>
+            <h3>
+                Kamu sudah menekan tombol di atas sebanyak
+                <span id="count">0</span>
+            </h3>
+        </div> -->
+
+        <div class="buttons" align="center">
+          <h3 id="caption">Coba teken dah ini tombol</h3>
+          
+          <button type="button" class="button" id="button">Ini tombol</button>
+        </div>
+
+        <script>
+            // Kode JavaScript kita
+            function welcome() {
+                alert("keluar lu anjing!");
+                const content = document.querySelector(".contents");
+                console.log("content ", content);
+                content.removeAttribute("hidden");
+            }
+
+            function increment() {
+                const countValue = document.getElementById("count");
+                countValue.innerText++;
+
+                // console.log('random > ', Math.floor(Math.random() * 11));
+                const random = Math.floor(Math.random() * 5);
+                // console.log(typeof(random));
+                if (countValue.innerText == random) {
+                    const createMessage = document.createElement('h4');
+
+                    createMessage.innerText = "Dapat Jackpot!!"
+
+                    const image = document.createElement('img');
+                    image.setAttribute('src',         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKhcceWKUnrt5BiIvo0eSnYd2nZWYYlH3yQ&s',)
+
+                    const content = document.querySelector(".contents");
+                    content.appendChild(createMessage)
+                    content.appendChild(image);
+                }
+            }
+
+            
+
+            const changeCaption = new Event('changeCaption');
+            window.addEventListener('load', () => {
+              const tombol = document.getElementById('button');
+              tombol.addEventListener('changeCaption', customEventHandler);
+              tombol.addEventListener('click', () => {
+                tombol.dispatchEvent(changeCaption)
+              })
+            })
+
+            function customEventHandler(event) {
+              console.log(`Event ${event.type} telah dijalankan`);
+              const caption = document.getElementById('caption');
+              caption.innerText = 'Custom Event biatch!';
+            }
+            
+            // document.body.onload = welcome;
+            // document.getElementById("incrementButton").onclick = increment;
+            // window.addEventListener("load", welcome);
+            // document.getElementById("incrementButton").addEventListener("click", increment);
+        </script>
+    </body>
+</html>

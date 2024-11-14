@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Training</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="contents">
+      <h2 align="center">Isi data diri</h2>
+
+      <div class="formContent">
+        <form id="formDataDiri">
+          <div class="form-element">
+            <label for="inputNama">Nama:</label><br />
+            <input
+              type="text"
+              name="nama"
+              value=""
+              id="inputNama"
+              placeholder="Nama"
+              required
+            /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="inputAsal">Asal:</label><br />
+            <input
+              type="text"
+              name="asal"
+              value=""
+              id="inputAsal"
+              placeholder="Asal"
+              required
+            /><br />
+          </div>
+          <div class="form-element">
+            <input type="submit" name="" value="Submit" />
+          </div>
+        </form>
+      </div>
+
+      <h3 id="messageAfterSubmit"></h3>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

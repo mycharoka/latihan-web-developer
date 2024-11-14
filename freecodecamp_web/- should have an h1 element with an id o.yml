@@ -1,0 +1,44 @@
+- should have an h1 element with an id of title.
+- #title should not be empty.
+- should have a p element with an id of description.
+- #description should not be empty.
+- should have a form element with an id of survey-form.
+- should have an input element with an id of name.
+- #name should have a type of text.
+- #name should require input.
+- #name should be a descendant of #survey-form.
+- should have an input element with an id of email.
+- #email should have a type of email.
+- #email should require input.
+- #email should be a descendant of #survey-form.
+- should have an input element with an id of number.
+- #number should be a descendant of #survey-form.
+- #number should have a type of number.
+- #number should have a min attribute with a numeric value.
+- #number should have a max attribute with a numeric value.
+- should have a label element with an id of name-label.
+- should have a label element with an id of email-label.
+- should have a label element with an id of number-label.
+- #name-label should contain text that describes the input.
+- #email-label should contain text that describes the input.
+- #number-label should contain text that describes the input.
+- #name-label should be a descendant of #survey-form.
+- #email-label should be a descendant of #survey-form.
+- #number-label should be a descendant of #survey-form.
+- #name should have a placeholder attribute and value.
+- #email should have a placeholder attribute and value.
+- #number should have a placeholder attribute and value.
+- should have a select field with an id of dropdown.
+- #dropdown should have at least two selectable (not disabled) option elements.
+- #dropdown should be a descendant of #survey-form.
+- should have at least two input elements with a type of radio (radio buttons).
+- should have at least two radio buttons that are descendants of #survey-form.
+- All radio buttons should have a value attribute and value.
+- All radio buttons should have a name attribute and value.
+- Every radio button group should have at least 2 radio buttons.
+- should have at least two input elements with a type of checkbox (checkboxes) that are descendants of #survey-form.
+- All checkboxes inside #survey-form should have a value attribute and value.
+- should have at least one textarea element that is a descendant of #survey-form.
+- should have an input or button element with an id of submit.
+- #submit should have a type of submit.
+- #submit should be a descendant of #survey-form.
